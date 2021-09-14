@@ -1,9 +1,10 @@
-namespace ToDoList.Models
+namespace Pierres
 {
-  public class Item
+  public class Pastry
   {
-
-    // properties, methods, etc. will go here.
-
+    public bool NumberOfPastries(int number_ordered)
+    {
+      return false;
+    }
   }
 }
