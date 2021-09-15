@@ -2,9 +2,10 @@ namespace Pierres
 {
   public class Bread
   {
-    public bool NumberOfBreads(int number_ordered)
+    public int NumberOfBreads(int number_ordered)
     {
-      return false;
+      
+      return number_ordered;
     }
   }
 }
