@@ -2,9 +2,9 @@ namespace Pierres
 {
   public class Pastry
   {
-    public bool NumberOfPastries(int number_ordered)
-    {
-      return false;
-    }
+    // public int NumberOfPastries(int number_ordered)
+    // {
+    //   return number_ordered;
+    // }
   }
 }

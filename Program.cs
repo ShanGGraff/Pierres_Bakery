@@ -8,14 +8,15 @@
 // Project is in a polished, portfolio-quality state.
 // The prompt’s required functionality and baseline project requirements are in place by the deadline.
 using System;
+using Pierres;
 
-namespace Pierres
+namespace Pierres_Bakery
 {
   public class Program
   {
     public static void Main()
     {
-      Console.WriteLine("Welcome to Pierre's");
+
     }
   }
 }
