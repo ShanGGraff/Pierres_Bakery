@@ -2,9 +2,12 @@ namespace Pierres
 {
   public class Pastry
   {
-    // public int NumberOfPastries(int number_ordered)
-    // {
-    //   return number_ordered;
-    // }
+    public int NumberOrdered { get; }
+
+      public Pastry(int numberOrdered)
+      {
+        NumberOrdered = numberOrdered;
+      }
+    // Pastry: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10.
   }
 }

@@ -9,22 +9,43 @@ namespace Pierres.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread();
+      Bread newBread = new Bread(3);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry();
+      Pastry newPastry = new Pastry(3);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
-    // [TestMethod]
-    // public void DoesBreadNumber_ConatainCorrectInt_True()
-    // {
-    //   Bread testBread = new Bread();
-    //   Assert.AreEqual(2, testBread.NumberOfBreads(2));
-    // }
+    [TestMethod]
+    public void GetDescription_ReturnsBreadOrdered_Int()
+    {
+      //Arrange
+      int numberOrdered = 3;
+      Bread newBread = new Bread(numberOrdered);
+
+      //Act
+      int result = newBread.NumberOrdered;
+
+      //Assert
+      Assert.AreEqual(numberOrdered, result);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnsPastryOrdered_Int()
+    {
+      //Arrange
+      int numberOrdered = 3;
+      Pastry newPastry = new Pastry(numberOrdered);
+
+      //Act
+      int result = newPastry.NumberOrdered;
+
+      //Assert
+      Assert.AreEqual(numberOrdered, result);
+    }
 
     // [TestMethod]
     // public void DoesPastryNumber_ConatainCorrectInt_True()
