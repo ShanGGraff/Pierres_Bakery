@@ -46,19 +46,5 @@ namespace Pierres.Tests
       //Assert
       Assert.AreEqual(numberOrdered, result);
     }
-
-    // [TestMethod]
-    // public void DoesPastryNumber_ConatainCorrectInt_True()
-    // {
-    //   Pastry testPastry = new Pastry();
-    //   Assert.AreEqual(2, testPastry.NumberOfPastries(2));
-    // }
-    
-    // [TestMethod]
-    // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    // {
-    //   // any necessary logic to prep for test; instantiating new classes, etc.
-    //   // Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-    // }
   }
 }
