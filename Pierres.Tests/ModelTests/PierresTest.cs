@@ -46,5 +46,19 @@ namespace Pierres.Tests
       //Assert
       Assert.AreEqual(numberOrdered, result);
     }
+
+    // [TestMethod]
+    // public GetPrice_ReturnPrice_Int()
+    // {
+    //   int numberOrdered = 1;
+    //   Bread newBread = new Bread(numberOrdered);
+    // }
+
+    [TestMethod]
+    public void BreadPastryTotalCostConstructor_CreatesInstanceOfBreadPastryTotalCost_BreadPastryTotalCost()
+    {
+      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost();
+      Assert.AreEqual(typeof(BreadPastryTotalCost), newBreadPastryTotalCost.GetType());
+    }
   }
 }
