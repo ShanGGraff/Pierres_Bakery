@@ -57,7 +57,7 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfThreePastry_Int()
+    public void GetDescription_ReturnsTotalCostOfFourPastry_Int()
     {
       //Arrange
       int numberOrdered = 4;
@@ -68,6 +68,20 @@ namespace Pierres.Tests
 
       //Assert
       Assert.AreEqual(7, result);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnsTotalCostOfFivePastry_Int()
+    {
+      //Arrange
+      int numberOrdered = 5;
+      Pastry newPastry = new Pastry(numberOrdered);
+
+      //Act
+      int result = newPastry.totalCostOfPastries();
+
+      //Assert
+      Assert.AreEqual(9, result);
     }
   }
 }

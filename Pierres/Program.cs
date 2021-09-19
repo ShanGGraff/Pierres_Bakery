@@ -7,7 +7,9 @@ namespace Pierres_Bakery
   {
     public static void Main()
     {
-      Console.WriteLine("Hello, I like cats");
+      Console.WriteLine("Hello, Welcome to Pierre's Bakery");
+      Console.WriteLine("Here are our bread prices: A single loaf costs $5, two loaves costs $10, and three loaves cost $10.");
+      Console.WriteLine("Here are our pastry prices: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10");
     }
   }
 }

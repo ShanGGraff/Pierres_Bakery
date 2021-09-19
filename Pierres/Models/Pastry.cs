@@ -19,6 +19,10 @@ namespace Pierres.Models
       {
         return 5;
       }
+      else if (NumberOrdered == 4)
+      {
+        return 7;
+      }
       return 0;  
     }
   }
