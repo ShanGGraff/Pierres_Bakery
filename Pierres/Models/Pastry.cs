@@ -15,6 +15,10 @@ namespace Pierres.Models
       {
         return 2;
       }
+      else if (NumberOrdered == 3)
+      {
+        return 5;
+      }
       return 0;  
     }
   }
