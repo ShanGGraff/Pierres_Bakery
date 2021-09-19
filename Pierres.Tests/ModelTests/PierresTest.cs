@@ -56,7 +56,7 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfBread_Int()
+    public void GetDescription_ReturnsTotalCostOfBreadOne_Int()
     {
       //Arrange
       int numberOrdered = 1;
@@ -67,6 +67,20 @@ namespace Pierres.Tests
 
       //Assert
       Assert.AreEqual(5, result);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnsTotalCostOfBreadTwo_Int()
+    {
+      //Arrange
+      int numberOrdered = 2;
+      Bread newBread = new Bread(numberOrdered);
+
+      //Act
+      int result = newBread.totalCostOfBreads();
+
+      //Assert
+      Assert.AreEqual(10, result);
     }
 
 
