@@ -20,11 +20,15 @@ namespace Pierres.Models
       {
         if (NumberOrdered == 1)
         {
-          return (5);
+          return 5;
         }
         else if (NumberOrdered == 2)
         {
-          return (10);
+          return 10;
+        }
+        else if (NumberOrdered == 3)
+        {
+          return 10;
         }
         return 0; 
       }
