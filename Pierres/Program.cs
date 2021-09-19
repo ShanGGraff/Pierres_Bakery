@@ -20,13 +20,13 @@ namespace Pierres_Bakery
       Console.WriteLine("      How many loaves of bread would you like? Please choose 0-3.");
       int numberOfBread = Int16.Parse(Console.ReadLine());
       Bread newBread = new Bread(numberOfBread);
-      Console.WriteLine(newBread.totalCostOfBreads());
       Console.WriteLine("");
       Console.WriteLine("      How many pastries would you like? Please choose 0, 1, 3, 4, 5 or 6.");
       int numberOfPastries = Int16.Parse(Console.ReadLine());
       Pastry newPastry = new Pastry(numberOfPastries);
-      Console.WriteLine(newPastry.totalCostOfPastries());
-      
+      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(newBread.totalCostOfBreads(), newPastry.totalCostOfPastries());
+      Console.WriteLine("");
+      Console.WriteLine("      The total cost of your order is: $" + newBreadPastryTotalCost.TotalCost());
 
     }
   }
