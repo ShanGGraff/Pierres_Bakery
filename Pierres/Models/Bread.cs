@@ -19,10 +19,10 @@ namespace Pierres
         {
           return (5);
         }
-        // else if ()
-        // {
-
-        // }
+        else if (NumberOrdered == 2)
+        {
+          return (5);
+        }
 
         return 0;
           
