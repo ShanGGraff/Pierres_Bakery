@@ -63,10 +63,10 @@ namespace Pierres.Tests
       Bread newBread = new Bread(numberOrdered);
 
       //Act
-      int result = newBread.totalCostOfBreads;
+      int result = newBread.totalCostOfBreads();
 
       //Assert
-      Assert.AreEqual(2, result);
+      Assert.AreEqual(5, result);
     }
 
 
