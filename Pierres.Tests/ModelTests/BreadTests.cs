@@ -1,11 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Pierres;
+using Pierres.Models;
+using System;
 
 namespace Pierres.Tests
 {
+
   [TestClass]
   public class BreadTests
   {
+    // public void Dispose()
+    // {
+    //   Bread.ClearObject();
+    // }
+
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
@@ -41,18 +48,33 @@ namespace Pierres.Tests
       Assert.AreEqual(5, result);
     }
 
-    // [TestMethod]
-    // public void GetDescription_ReturnsTotalCostOfBreadTwo_Int()
-    // {
-    //   //Arrange
-    //   int numberOrdered = 2;
-    //   Bread newBread = new Bread(numberOrdered);
+    [TestMethod]
+    public void GetDescription_ReturnsTotalCostOfBreadTwo_Int()
+    {
+      //Arrange
+      int numberOrdered = 2;
+      Bread newBread = new Bread(numberOrdered);
 
-    //   //Act
-    //   int result = newBread.totalCostOfBreads();
+      //Act
+      int result = newBread.totalCostOfBreads();
+      Console.WriteLine(result);
 
-    //   //Assert
-    //   Assert.AreEqual(10, result);
-    // }
+      //Assert
+      Assert.AreEqual(10, result);
+    }
+
+    public void GetDescription_ReturnsTotalCostOfBreadThree_Int()
+    {
+      //Arrange
+      int numberOrdered = 3;
+      Bread newBread = new Bread(numberOrdered);
+
+      //Act
+      int result = newBread.totalCostOfBreads();
+      Console.WriteLine(result);
+
+      //Assert
+      Assert.AreEqual(10, result);
+    }
   }
 }

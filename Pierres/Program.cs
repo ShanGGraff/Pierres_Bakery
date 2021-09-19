@@ -1,5 +1,5 @@
 using System;
-using Pierres;
+using Pierres.Models;
 
 namespace Pierres_Bakery
 {
@@ -7,7 +7,7 @@ namespace Pierres_Bakery
   {
     public static void Main()
     {
-
+      Console.WriteLine("Hello, I like cats");
     }
   }
 }
