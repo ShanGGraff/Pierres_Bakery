@@ -8,7 +8,7 @@ namespace Pierres.Models
     {
       NumberOrdered = numberOrdered;
     }
-      // Pastry: Buy 1 for $2 or 3 for $5. Four pastries costs $7, five pastries costs $9, and six pastries costs $10.
+  
     public int totalCostOfPastries()
     {
       if (NumberOrdered == 1)
