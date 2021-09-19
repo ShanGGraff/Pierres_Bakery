@@ -20,12 +20,12 @@ namespace Pierres.Tests
       //Arrange
       int numberOrderedOne = 3;
       int numberOrderedTwo = 5;
-      int totalReturned = numberOrderedOne + numberOrderedOne;
+      int totalReturned = numberOrderedOne + numberOrderedTwo;
 
       BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(numberOrderedOne, numberOrderedTwo);
 
       //Act
-      int result = newBreadPastryTotalCost.TotalCost;
+      int result = newBreadPastryTotalCost.TotalCost();
 
       //Assert
       Assert.AreEqual(totalReturned, result);

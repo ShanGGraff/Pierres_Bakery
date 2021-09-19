@@ -11,5 +11,10 @@ namespace Pierres
       TotalCostOfBread = totalCostOfBread;
       TotalCostOfPastries = totalCostOfPastries;
     }
+
+    public int TotalCost()
+    {
+      return TotalCostOfBread + TotalCostOfPastries;
+    }
   }
 }

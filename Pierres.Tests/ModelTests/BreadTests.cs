@@ -14,13 +14,6 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void BreadPastryTotalCostConstructor_CreatesInstanceOfBreadPastryTotalCost_BreadPastryTotalCost()
-    {
-      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(3, 5);
-      Assert.AreEqual(typeof(BreadPastryTotalCost), newBreadPastryTotalCost.GetType());
-    }
-
-    [TestMethod]
     public void GetDescription_ReturnsBreadOrdered_Int()
     {
       //Arrange
