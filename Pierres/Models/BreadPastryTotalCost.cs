@@ -7,11 +7,9 @@ namespace Pierres
     public int TotalCostOfPastries { get; }
 
     public BreadPastryTotalCost(int totalCostOfBread, int totalCostOfPastries)
-      {
-        TotalCostOfBread = totalCostOfBread;
-        TotalCostOfPastries = totalCostOfPastries;
-      }
-
-    
+    {
+      TotalCostOfBread = totalCostOfBread;
+      TotalCostOfPastries = totalCostOfPastries;
+    }
   }
 }

@@ -14,21 +14,21 @@ namespace Pierres.Tests
       Assert.AreEqual(typeof(BreadPastryTotalCost), newBreadPastryTotalCost.GetType());
     }
 
-    // [TestMethod]
-    // public void GetDescription_ReturnsBreadPastryTotalCost_Int()
-    // {
-    //   //Arrange
-    //   int numberOrderedOne = 3;
-    //   int numberOrderedTwo = 5;
-    //   int totalReturned = numberOrderedOne + numberOrderedOne;
+    [TestMethod]
+    public void GetDescription_ReturnsBreadPastryTotalCost_Int()
+    {
+      //Arrange
+      int numberOrderedOne = 3;
+      int numberOrderedTwo = 5;
+      int totalReturned = numberOrderedOne + numberOrderedOne;
 
-    //   BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(numberOrderedOne, numberOrderedTwo);
+      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(numberOrderedOne, numberOrderedTwo);
 
-    //   //Act
-    //   int result = newBreadPastryTotalCost.TotalCost;
+      //Act
+      int result = newBreadPastryTotalCost.TotalCost;
 
-    //   //Assert
-    //   Assert.AreEqual(totalReturned, result);
-    // }
+      //Assert
+      Assert.AreEqual(totalReturned, result);
+    }
   }
 }
