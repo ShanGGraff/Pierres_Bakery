@@ -27,5 +27,19 @@ namespace Pierres.Tests
       //Assert
       Assert.AreEqual(numberOrdered, result);
     }
+
+    [TestMethod]
+    public void GetDescription_ReturnsTotalCostOfOnePastry_Int()
+    {
+      //Arrange
+      int numberOrdered = 1;
+      Pastry newPastry = new Pastry(numberOrdered);
+
+      //Act
+      int result = newPastry.totalCostOfPastries();
+
+      //Assert
+      Assert.AreEqual(2, result);
+    }
   }
 }

@@ -5,11 +5,6 @@ namespace Pierres.Models
 
     public int NumberOrdered { get; }
 
-    // public static void ClearBread()
-    // {
-    //   Bread.NumberOrdered.Clear();
-    // } 
-
       public Bread(int numberOrdered)
       {
         NumberOrdered = numberOrdered;
@@ -18,19 +13,19 @@ namespace Pierres.Models
       
       public int totalCostOfBreads()
       {
-        if (NumberOrdered == 1)
-        {
-          return 5;
-        }
-        else if (NumberOrdered == 2)
-        {
-          return 10;
-        }
-        else if (NumberOrdered == 3)
-        {
-          return 10;
-        }
-        return 0; 
+      if (NumberOrdered == 1)
+      {
+        return 5;
       }
+      else if (NumberOrdered == 2)
+      {
+        return 10;
+      }
+      else if (NumberOrdered == 3)
+      {
+        return 10;
+      }
+      return 0; 
+    }
   }
 }
