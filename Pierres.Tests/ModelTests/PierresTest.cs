@@ -19,6 +19,14 @@ namespace Pierres.Tests
       Pastry newPastry = new Pastry(3);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void BreadPastryTotalCostConstructor_CreatesInstanceOfBreadPastryTotalCost_BreadPastryTotalCost()
+    {
+      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(3, 5);
+      Assert.AreEqual(typeof(BreadPastryTotalCost), newBreadPastryTotalCost.GetType());
+    }
+
     [TestMethod]
     public void GetDescription_ReturnsBreadOrdered_Int()
     {
@@ -34,7 +42,7 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnsPastryOrdered_Int()
+    public void GetDescription_ReturnsPastriesOrdered_Int()
     {
       //Arrange
       int numberOrdered = 3;
@@ -48,11 +56,19 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void BreadPastryTotalCostConstructor_CreatesInstanceOfBreadPastryTotalCost_BreadPastryTotalCost()
+    public void GetDescription_ReturnsTotalCostOfBread_Int()
     {
-      BreadPastryTotalCost newBreadPastryTotalCost = new BreadPastryTotalCost(3, 5);
-      Assert.AreEqual(typeof(BreadPastryTotalCost), newBreadPastryTotalCost.GetType());
+      //Arrange
+      int numberOrdered = 1;
+      Bread newBread = new Bread(numberOrdered);
+
+      //Act
+      int result = newBread.totalCostOfBreads;
+
+      //Assert
+      Assert.AreEqual(2, result);
     }
+
 
     // [TestMethod]
     // public void GetDescription_ReturnsBreadPastryTotalCost_Int()
