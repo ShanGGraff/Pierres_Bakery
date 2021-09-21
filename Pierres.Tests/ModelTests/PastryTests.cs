@@ -43,59 +43,73 @@ namespace Pierres.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfThreePastry_Int()
+    public void GetDescription_ReturnsTotalCostOfTwoPastry_Int()
     {
       //Arrange
-      int numberOrdered = 3;
+      int numberOrdered = 2;
       Pastry newPastry = new Pastry(numberOrdered);
 
       //Act
       int result = newPastry.totalCostOfPastries();
 
       //Assert
-      Assert.AreEqual(5, result);
+      Assert.AreEqual(4, result);
     }
 
-    [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfFourPastry_Int()
-    {
-      //Arrange
-      int numberOrdered = 4;
-      Pastry newPastry = new Pastry(numberOrdered);
+    // [TestMethod]
+    // public void GetDescription_ReturnsTotalCostOfThreePastry_Int()
+    // {
+    //   //Arrange
+    //   int numberOrdered = 3;
+    //   Pastry newPastry = new Pastry(numberOrdered);
 
-      //Act
-      int result = newPastry.totalCostOfPastries();
+    //   //Act
+    //   int result = newPastry.totalCostOfPastries();
 
-      //Assert
-      Assert.AreEqual(7, result);
-    }
+    //   //Assert
+    //   Assert.AreEqual(5, result);
+    // }
 
-    [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfFivePastry_Int()
-    {
-      //Arrange
-      int numberOrdered = 5;
-      Pastry newPastry = new Pastry(numberOrdered);
+    // [TestMethod]
+    // public void GetDescription_ReturnsTotalCostOfFourPastry_Int()
+    // {
+    //   //Arrange
+    //   int numberOrdered = 4;
+    //   Pastry newPastry = new Pastry(numberOrdered);
 
-      //Act
-      int result = newPastry.totalCostOfPastries();
+    //   //Act
+    //   int result = newPastry.totalCostOfPastries();
 
-      //Assert
-      Assert.AreEqual(9, result);
-    }
+    //   //Assert
+    //   Assert.AreEqual(7, result);
+    // }
 
-    [TestMethod]
-    public void GetDescription_ReturnsTotalCostOfSixPastry_Int()
-    {
-      //Arrange
-      int numberOrdered = 6;
-      Pastry newPastry = new Pastry(numberOrdered);
+    // [TestMethod]
+    // public void GetDescription_ReturnsTotalCostOfFivePastry_Int()
+    // {
+    //   //Arrange
+    //   int numberOrdered = 5;
+    //   Pastry newPastry = new Pastry(numberOrdered);
 
-      //Act
-      int result = newPastry.totalCostOfPastries();
+    //   //Act
+    //   int result = newPastry.totalCostOfPastries();
 
-      //Assert
-      Assert.AreEqual(10, result);
-    }
+    //   //Assert
+    //   Assert.AreEqual(9, result);
+    // }
+
+    // [TestMethod]
+    // public void GetDescription_ReturnsTotalCostOfSixPastry_Int()
+    // {
+    //   //Arrange
+    //   int numberOrdered = 6;
+    //   Pastry newPastry = new Pastry(numberOrdered);
+
+    //   //Act
+    //   int result = newPastry.totalCostOfPastries();
+
+    //   //Assert
+    //   Assert.AreEqual(10, result);
+    // }
   }
 }
