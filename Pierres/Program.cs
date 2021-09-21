@@ -17,9 +17,10 @@ namespace Pierres_Bakery
       Buy 1 for $2 or 3 for $5. Four pastries cost $7, 
       five pastries cost $9, and six pastries cost $10");
       Console.WriteLine("");
-      Console.WriteLine("      How many loaves of bread would you like? Please choose 0-3.");
+      Console.WriteLine("      How many loaves of bread would you like?");
       int numberOfBread = Int16.Parse(Console.ReadLine());
       Bread newBread = new Bread(numberOfBread);
+      Console.WriteLine(newBread.totalCostOfBreads());
       Console.WriteLine("");
       Console.WriteLine("      How many pastries would you like? Please choose 0, 1, 3, 4, 5 or 6.");
       int numberOfPastries = Int16.Parse(Console.ReadLine());
