@@ -37,12 +37,12 @@ Pierre's Bakery is a basic console base app written in C# and utilizing .NET uni
 
 | Behavior | Input | Output |
 |:---:|:---:|:---:|
-| The program should handle user input for the number of breads ordered | When it receives a 0, 1, 2, or 3 | It should return the total cost of the bread|
-| The program should handle user input for the number of pastries ordered | When it receives a 0, 1, 3, 4, 5, 6 | It should return the total cost of the pastries |
+| The program should handle user input for the number of breads ordered | When it receives an INT | It should return the total cost of the bread|
+| The program should handle user input for the number of pastries ordered | When it receives an INT | It should return the total cost of the pastries |
 | The program should handle the output from both the Bread and Pastry class | When the BreadPastryTotalCost class receives Bread.totalCostOfBreads() and Pastry.totalCostOfPastries()| It should return the total cost of the order |
 
 ## Known Bugs <a id="bugs"></a>
-* Currently can only order 0-3 loaves of bread and 0, 1, 3, 4, 5, or 6 pastries. There is no error handling if the user doesn't follow the instructions from the prompt.
+* There is no error handling if the user doesn't follow the instructions from the prompt.
 
 ## License
 * [MIT](https://choosealicense.com/licenses/mit/)
